@@ -1,5 +1,5 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+### GET request to get all patients
+GET http://lb-dea46e29.elb.localhost.localstack.cloud:4004/api/patients
+Authorization: Bearer {{token}}
 
 ###

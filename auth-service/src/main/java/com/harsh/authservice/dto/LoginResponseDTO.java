@@ -1,4 +1,14 @@
 package com.harsh.authservice.dto;
 
-public class LoginResponseDTO {
+import lombok.Data;
+
+@Data
+public class LoginResponseDTO
+{
+    private final String token;
+
+    public LoginResponseDTO(String token) {
+        this.token = token;
+    }
+
 }

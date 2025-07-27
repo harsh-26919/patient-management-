@@ -1,8 +1,10 @@
 ### Login to retrieve a token
-POST http://localhost:4005/login
+POST lb-dea46e29.elb.localhost.localstack.cloud:4004/auth/login
 Content-Type: application/json
 
 {
   "email": "testuser@test.com",
   "password": "password123"
 }
+
+> {% client.global.set("token", response.body.token) %}
